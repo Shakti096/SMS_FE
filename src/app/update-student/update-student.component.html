@@ -1,0 +1,64 @@
+<div id="popup1" class="overlay" *ngIf="showUpdate">
+  <div class="popup">
+    <div>
+      <h5>Update Student Details</h5>
+      <a class="close" href="">&times;</a>
+    </div>
+    <form [formGroup]="studentForm" method="post" class="form-inline">
+    <div class="tbl-content">
+      <table class="table" border="0" style="align-content: center;">
+        <tbody>
+        <tr>
+          <th scope="row">Student Id</th>
+          <td ><input type="text" class="form-control" aria-label="Small" disabled="true" aria-describedby="inputGroup-sizing-sm" formControlName="studentId" [value]="student.studentId" ></td>
+        </tr>
+        <tr>
+          <th scope="row">First Name</th>
+          <td ><input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" formControlName="firstName" [value]="student.firstName" ></td>
+        </tr>
+        <tr>
+          <th scope="row">Last Name</th>
+          <td ><input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" formControlName="lastName" [value]="student.lastName"></td>
+        </tr>
+        <tr>
+          <th scope="row">Email</th>
+          <td ><input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" formControlName="email" [value]="student.email"></td>
+        </tr>
+
+        <tr>
+          <th scope="row">Address Line 1</th>
+          <td ><input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" formControlName="addressLine1" [value]="student.address.addressLine1"></td>
+        </tr>
+
+        <tr>
+          <th scope="row">Address Line 2</th>
+          <td ><input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" formControlName="addressLine2" [value]="student.address.addressLine2"></td>
+        </tr>
+
+        <tr>
+          <th scope="row">City</th>
+          <td ><input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" formControlName="city" [value]="student.address.city"></td>
+        </tr>
+
+        <tr>
+          <th scope="row">Country</th>
+          <td ><input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" formControlName="country" [value]="student.address.country"></td>
+        </tr>
+
+        <tr>
+          <th scope="row">Postal Code</th>
+          <td ><input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" formControlName="postalCode" [value]="student.address.postalCode"></td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    </form>
+    <tr>&nbsp;</tr>
+    <tr>
+      <td class="text-right">
+        <button type="button" class="btn-lg btn-info btn-custom " (click)="updateStudentDetails()">Submit</button>
+      </td>
+    </tr>
+  </div>
+</div>
+

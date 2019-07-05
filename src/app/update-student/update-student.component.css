@@ -1,0 +1,53 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  opacity: 3;
+}
+
+.popup {
+  margin: 5% auto;
+  padding: 25px;
+  background: -webkit-linear-gradient(left, #25c481, #25b7c4)!important;
+  background: linear-gradient(to right, #25c481, #25b7c4)!important;
+  border-radius: 5px;
+  width: 35%;
+  position: relative;
+  transition: all 5s ease-in-out;
+  color:#fff;
+}
+
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: rgba(255,255,255,0.5);
+}
+.popup .close:hover {
+  color: rgba(255,255,255,0.7);
+}
+.popup .content {
+  max-height: 30%;
+  overflow: hidden;
+}
+
+.tbl-content{
+  height:400px;
+  margin-top: 20px;
+  overflow: auto;
+
+}
+
+@media screen and (max-width: 600px){
+  .popup{
+    width: 70%;
+  }
+}

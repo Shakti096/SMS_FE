@@ -1,0 +1,41 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+body{
+  background: -webkit-linear-gradient(left, #25c481, #25b7c4)!important;
+  background: linear-gradient(to right, #25c481, #25b7c4)!important;
+  margin:1% 10%;
+}
+
+th{
+  padding: 10px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  color:#fff;
+  border-bottom: solid 1px rgba(255,255,255,0.1);
+  vertical-align: middle !important;
+}
+td{
+  padding: 5px;
+  text-align: left;
+  vertical-align:middle;
+  font-weight: 300;
+  font-size: 12px;
+  color:#fff;
+  border-bottom: solid 1px rgba(255,255,255,0.1);
+  vertical-align: middle !important;
+}
+
+.btn-custom{
+  background-color: rgba(255,255,255,0.4);
+  border: solid 1px rgba(255,255,255,0.6);
+  font-weight: 500;
+  font-size: 13px;
+  border-radius: 5px;
+}
+
+.btn-custom:hover {
+  background-color: rgba(255,255,255,0.5);
+  border: solid 1px rgba(255,255,255,0.7);
+}
